@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const logoUrl = "https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/Logotipo.png"; // Icon only logo
@@ -60,15 +60,15 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-green-500 inline-block pb-1">Contáctanos</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="text-green-500 mt-1 flex-shrink-0" size={20} />
+                <MapPin className="text-green-500 mt-1 shrink-0" size={20} />
                 <span className="text-gray-400">Calle 9 # 14-74, Comuna 3, Santa Marta, Colombia</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="text-green-500 flex-shrink-0" size={20} />
+                <Phone className="text-green-500 shrink-0" size={20} />
                 <span className="text-gray-400">+57 3136145611</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="text-green-500 flex-shrink-0" size={20} />
+                <Mail className="text-green-500 shrink-0" size={20} />
                 <span className="text-gray-400">gerencia@greenglo.com.co</span>
               </li>
             </ul>
