@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+
+:root {
+
+  /* El verde principal */
+  --primary: hsl(102, 53%, 43%);
+  --primary-soft: hsl(102, 61%, 54%);
+  --primary-hover: hsl(102, 53%, 38%); 
+  --primary-light: hsl(99, 100%, 93%); 
+
+  /* El gris azulado del texto */
+  --secondary: hsl(209, 12%, 35%);
+  --secondary-foreground: hsl(209, 20%, 97%); 
+
+ /* Amarillo Solar */
+  --accent-solar: hsl(73, 92%, 50%); 
+  --accent-solar-hover: hsl(73, 90%, 42%);
+  --accent-soft: hsl(73, 92%, 96%);
+
+  /* Texto general (cuerpo) */
+  --text-body: hsl(209, 10%, 45%);
+  
+  /* Bordes sutiles */
+  --border-subtle: hsl(208, 15%, 85%);
+  
+  /* Fondos */
+  --surface: hsl(0, 0%, 100%);      /* Blanco puro */
+  --surface-alt: hsl(210, 20%, 98%); /* Blanco humo (para separar secciones) */
+
+  /* --- 4. ESTADOS (Funcionales) --- */
+  --success: var(--primary); /* Reutilizamos el verde para éxito */
+  --error: hsl(0, 72%, 51%);
+
+  /* --- NEUTRALS (Textos y Estructura) --- */
+  --main:   hsl(209, 12%, 35%); 
+  --muted:  hsl(208, 10%, 74%);  
+
+  /* --- ACCENT (Llamadas a la acción / Highlights) --- */
+  --accent:      hsl(80, 53%, 47%);  
+  --accent-dim:  hsl(86, 52%, 45%);  
+  --accent-act:  hsl(86, 55%, 52%);
+  --accent-soft: hsl(86, 100%, 94%);
+  --accent-light:hsl(87, 100%, 96%);
+
+  /* Colores base */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 23%;
+
+  --green-50: 95 50% 97%;
+  --green-100: 95 45% 92%;
+  --green-200: 95 50% 82%;
+  --green-300: 95 55% 65%;
+  --green-400: 95 55% 50%;
+  --green-500: 95 60% 40%;
+  --green-600: 95 65% 32%;
+  --green-700: 95 70% 25%;
+  
+  --gray-100: 0 0% 96%;
+  --gray-600: 200 10% 40%;
+  --gray-700: 200 15% 30%;
+  --gray-800: 200 18% 22%;
+  --whatsapp: 142 70% 45%;
+  /* Extras */
+  --radius: 8px;
+
+}
+
+
+@theme{
+
+  /* Fonts */
+  --font-sans: Outfit, system-ui, sans-serif;
+  --font-heading: 'DM Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-parraph: 'Geist', sans-serif;
+
+  /* El verde principal */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover); 
+  --color-primary-light: var(--primary-light); 
+  --color-primary-soft: var(--primary-soft);
+
+  /* El gris azulado del texto */
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground); 
+
+ /* Amarillo Solar */
+  --color-accent-solar: var(--accent-solar); 
+  --color-accent-solar-hover: var(--accent-solar-hover);
+  --color-accent-soft: var(--accent-soft);
+
+  /* Texto general (cuerpo) */
+  --color-body: var(--text-body);
+  --color-main: var(--main);
+  
+  /* Bordes sutiles */
+  --color-border-subtle: var(--border-subtle);
+  
+  /* Fondos */
+  --color-surface: var(--surface);     
+  --color-surface-alt: var(--surface-alt); 
+
+  /* ESTADOS */
+  --color-success: var(--primary); 
+  --color-error: var(--error);      
+
+
+
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-accent-act: var(--accent-act);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-light: var(--accent-light);
+
+  --color-action-hover: var(--action-hover);
+  --color-action-active: var(--action-active);
+  --color-border-dark: var(--border-dark);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-gray-100: hsl(var(--gray-100));
+  --color-whatsapp: hsl(var(--whatsapp));
+
+}
+
+  @layer base {
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-background);
+      color: var(--color-foreground);
+    }
+    p{
+      font-family: var(--font-parraph);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-body);
+    }
+  }
+
+@layer components{
+    .gradient-primary {
+      background: linear-gradient(135deg, hsl(var(--green-400)) 0%, hsl(var(--green-600)) 100%);
+    }
+
+    .gradient-button-1 {
+      background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--whatsapp)) 100%);
+    }
+
+    .gradient-hero {
+      background: linear-gradient(180deg, hsl(var(--green-50)) 0%, hsl(var(--background)) 100%);
+    }
+
+    .gradient-section {
+      background: linear-gradient(180deg, hsl(var(--green-100)) 20%, hsl(var(--green-100)) 100%);
+    }
+
+    .Title-section {
+      background: linear-gradient(180deg, hsl(var(--green-100)) 0%, hsl(var(--background)) 80%);
+      border: 1px solid var(--accent-soft);
+    }
+
+    .gradient-section-clients {
+      background: linear-gradient(180deg, hsl(var(--gray-100)) 0%, hsl(var(--gray-100)) 80%);
+    }
+
+    .gradient-section-contac {
+      background: linear-gradient(180deg, var(--accent) 0%, hsl(var(--background)) 40%);
+    }
+
+
+    .text-gradient {
+      background: linear-gradient(135deg, hsl(var(--green-500)) 0%, hsl(var(--green-400)) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient-light {
+      background: linear-gradient(135deg, var(--accent-solar) 0%, hsl(var(--green-200)) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .card-hover {
+      @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    }
+
+    .whatsapp-btn {
+      @apply bg-whatsapp text-white hover:opacity-90 transition-all duration-300;
+    }
+  }
+
+@keyframes horizontal-bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); } /* Mueve la flecha 4px a la derecha */
+  }
+  .animate-nudge {
+    animation: horizontal-bounce 1.5s ease-in-out infinite;
+  }
