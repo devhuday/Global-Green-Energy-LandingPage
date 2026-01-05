@@ -188,7 +188,7 @@ export function ServicesSection() {
 
         {/* 3. LAYOUT DESKTOP (GRID) */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-8 xl:gap-10">
-          {services.map((service, index) => (
+          {services.map((service,_) => (
              <ServiceCard key={service.title} service={service} className="h-full" />
           ))}
         </div>
