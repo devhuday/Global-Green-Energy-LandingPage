@@ -5,17 +5,17 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "./ui/dialog";
-import { Button } from "./ui/Button";
-import { Badge } from "./ui/Badge";
+} from "../ui/dialog";
+import { Button } from "../ui/Button";
+import { Badge } from "../ui/Badge";
 
 // Asegúrate de que las rutas sean correctas
-import testimonialCarlos from "../assets/testimonial-carlos.jpg";
-import testimonialMaria from "../assets/testimonial-maria.jpg";
-import testimonialRoberto from "../assets/testimonial-roberto.jpg";
-import projectComercial from "../assets/project-carlos.jpg";
-import projectResidencial from "../assets/project-maria.jpg";
-import projectAgro from "../assets/project-roberto.jpeg";
+import testimonialCarlos from "../../assets/testimonial-carlos.jpg";
+import testimonialMaria from "../../assets/testimonial-maria.jpg";
+import testimonialRoberto from "../../assets/testimonial-roberto.jpg";
+import projectComercial from "../../assets/project-carlos.jpg";
+import projectResidencial from "../../assets/project-maria.jpg";
+import projectAgro from "../../assets/project-roberto.jpeg";
 
 const testimonials = [
   {
@@ -82,7 +82,7 @@ const clients = [
 
 // Sub-componente para la tarjeta de testimonio (DRY)
 const TestimonialCard = ({ testimonial, onOpen }: { testimonial: typeof testimonials[0]; onOpen: (testimonial: typeof testimonials[0]) => void }) => (
-  <div className="group relative flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
+  <div id="clientes" className="group relative flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-gray-100">
     {/* Icono de Comilla Decorativo */}
     <Quote className="absolute right-6 top-6 h-12 w-12 text-primary/10 rotate-180" />
 

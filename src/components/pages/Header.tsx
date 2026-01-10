@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Button } from "./ui/Button";
+import { Button } from "../ui/Button";
 import { Menu, X } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
-import logoUrl from "../assets/LogoGreenglo_1.png";
+import logoUrl from "../../assets/LogoGreenglo_1.png";
 // 1. Importamos el componente Transition de Headless UI
 import { Transition } from "@headlessui/react";
 import { Fragment } from 'react'; // Necesario para Headless UI en algunas versiones
@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     // Añadí 'relative' aquí para asegurar que el menú móvil se posicione correctamente si decidimos hacerlo absoluto luego
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-main/10 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md border-b border-main/10 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20 relative z-10 bg-white/95 backdrop-blur-md">
           {/* ... (Esta parte del logo y navbar desktop sigue igual que en la respuesta anterior) ... */}

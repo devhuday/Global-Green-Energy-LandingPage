@@ -1,4 +1,4 @@
-import { WpButton } from "./ui/buttonWhatsapp"; // Asegúrate de que la ruta sea correcta
+import { WpButton } from "../ui/buttonWhatsapp"; // Asegúrate de que la ruta sea correcta
 
 export const ContactAdSection = () => {
   return (
@@ -49,7 +49,7 @@ export const ContactAdSection = () => {
             <div className="absolute -inset-4 bg-green-200/30 rounded-full blur-2xl -z-10 transform translate-x-4 translate-y-4"></div>
             
             <img
-              src="https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/imagen_2026-01-02_175205617.png" 
+              src="https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/IMG_20240311_113605.webp" 
               alt="Ingeniero de Greenglo asesorando"
               className="relative w-full max-w-md object-cover lg:max-w-md rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-[1.02] aspect-4/3 lg:aspect-square"
             />

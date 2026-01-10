@@ -92,12 +92,12 @@ export const SavingsChart: React.FC = () => {
     },
     {
       category: 'Industria',
-      image: 'https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/dji_fly_20250730_2_photo%20(4).webp',
-      savingsPercentage: '-50%',
-      priceBefore: '$30.000.000',
-      priceAfter: '$16.500.000',
-      consumption: '290.000 kWh/mes',
-      systemSize: '108 kWp',
+      image: 'https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/20240319_101301%20(2).webp',
+      savingsPercentage: '-80%',
+      priceBefore: '$8.000.000',
+      priceAfter: '$2.200.000',
+      consumption: '5.500 kWh/mes',
+      systemSize: '34 kWp',
     },
   ];
 
@@ -130,8 +130,8 @@ export const SavingsChart: React.FC = () => {
             <Zap size={20} className="fill-current" />
             Solicitar Simulación Personalizada
           </a>
-          <p className="text-gray-500 text-[10px] mb-2 font-medium italic">
-            * Valores estimados basados en el promedio de radiación solar en Colombia y tarifas vigentes.
+          <p className="text-gray-500 text-[10px] font-medium italic">
+            * Valores estimados basados en el promedio de radiación solar en Colombia y tarifas vigentes. *
           </p>
         </div>
       </div>

@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className='hidden md:block'>
             <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-green-500 inline-block pb-1">Enlaces Rápidos</h4>
             <ul className="space-y-3">
               <li><a href="#inicio" className="text-gray-400 hover:text-green-400 transition-colors">Inicio</a></li>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Services List */}
-          <div>
+          <div className='hidden md:block'>
             <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-green-500 inline-block pb-1">Servicios</h4>
             <ul className="space-y-3">
               <li className="text-gray-400">Paneles Solares On-Grid</li>
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className='hidden md:block'>
             <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-green-500 inline-block pb-1">Contáctanos</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

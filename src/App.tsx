@@ -1,12 +1,13 @@
 import './App.css'
-import { Header } from './components/Header';
-import { Hero} from './components/Hero';
-import { ServicesSection } from './components/ServicesG';
-import { ClientsSection } from './components/Clients';
-import {AboutSection} from './components/About';
-import { ContactAdSection } from './components/ContactAD';
-import {SavingsChart} from './components/SavingsCharts';
-import { Footer } from './components/Footer';
+import { Header } from './components/pages/Header';
+import { Hero} from './components/pages/Hero';
+import { ServicesSection } from './components/pages/ServicesG';
+import { ClientsSection } from './components/pages/Clients';
+import {AboutSection} from './components/pages/About';
+import { ContactAdSection } from './components/pages/ContactAD';
+import {SavingsChart} from './components/pages/SavingsCharts';
+import { Footer } from './components/pages/Footer';
+import { SolarCalculator } from './components/pages/SolarCalculator';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <ContactAdSection />
       <ClientsSection />
       <SavingsChart />
+      <SolarCalculator />
       <Footer/>
     </>
   )

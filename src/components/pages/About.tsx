@@ -1,6 +1,6 @@
 import React from "react";
-import { ArrowUpRight, Check, MoveRight } from "lucide-react";
-import Badge from "./ui/Badge";
+import { ArrowUpRight, Check, MoveRight, UserCheck } from "lucide-react";
+import Badge from "../ui/Badge";
 
 const featuresList = [
   "Instalación de Sistemas Solares",
@@ -117,13 +117,19 @@ const AboutSection: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex justify-center md:hidden mb-5 order-2">
-            <button className=" mt-2 group relative inline-flex items-center gap-4 px-4 py-2 bg-primary text-white rounded-4xl font-semibold text-base shadow-lg shadow-primary/30   max-h-xl w-70">
+          <div className="flex flex-col items-center justify-center md:hidden mb-5 order-2">
+            <button onClick={handleClick} className=" mt-2 group relative inline-flex items-center gap-4 px-4 py-2 bg-primary text-white rounded-4xl font-semibold text-base shadow-lg shadow-primary/30   max-h-xl w-70">
               <span className="bg-white/20 p-1.5 lg:p-2 rounded-full group-hover:bg-white/30 transition-colors">
                 <ArrowUpRight size={18} />
               </span>
               <span className="relative ms-5 z-10">Mas informacion</span>
             </button>
+            <a href="#clientes" className=" mt-5 group relative inline-flex items-center gap-4 px-4 py-2 bg-primary-light text-white rounded-4xl font-semibold text-base shadow-lg shadow-accent/25 max-h-xl w-70">
+              <span className="bg-accent/20 p-1.5 lg:p-2 rounded-full group-hover:bg-accent/40 transition-colors">
+                <UserCheck size={18} className="text-accent" />
+              </span>
+              <span className="relative text-accent ms-9 z-10">Testimonios</span>
+            </a>
           </div>
         </div>
       </div>
