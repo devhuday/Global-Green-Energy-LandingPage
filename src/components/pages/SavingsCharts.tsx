@@ -1,4 +1,5 @@
-import { Zap } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 interface SavingsCardProps {
   category: string;
@@ -22,6 +23,7 @@ const SavingsCard: React.FC<SavingsCardProps> = ({
   return (
     <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col transition-transform hover:scale-[1.02] duration-300">
       {/* Top Image Area */}
+      
       <div className="relative h-56">
         <img src={image} alt={category} className="w-full h-full  object-cover" />
         <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
@@ -102,7 +104,7 @@ export const SavingsChart: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id='proyectos' className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
@@ -127,8 +129,8 @@ export const SavingsChart: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all transform hover:scale-105 mb-2"
           >
-            <Zap size={20} className="fill-current" />
-            Solicitar Simulación Personalizada
+            <FontAwesomeIcon icon={faWhatsapp} className='text-3xl' />
+            Solicitar cotizacion Personalizada
           </a>
           <p className="text-gray-500 text-[10px] font-medium italic">
             * Valores estimados basados en el promedio de radiación solar en Colombia y tarifas vigentes. *

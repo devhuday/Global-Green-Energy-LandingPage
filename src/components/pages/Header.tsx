@@ -10,9 +10,8 @@ import { Fragment } from 'react'; // Necesario para Headless UI en algunas versi
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
-  { label: "Beneficios", href: "#beneficios" },
-  { label: "Proyectos", href: "#proyectos" },
   { label: "Clientes", href: "#clientes" },
+  { label: "Proyectos", href: "#proyectos" },
   { label: "Contacto", href: "#contacto" },
 ];
 

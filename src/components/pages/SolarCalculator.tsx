@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   X, Zap, TrendingUp, Leaf, DollarSign, 
   BarChart3, Sun, Battery, ArrowRight, CheckCircle2,
-  PiggyBank, ArrowUpRight, Home, UtilityPole, Lightbulb
+  PiggyBank, ArrowUpRight, Home, UtilityPole
 } from 'lucide-react';
 import { 
   Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, 
-  Tooltip, ResponsiveContainer, Cell, Area, AreaChart, ComposedChart, ReferenceLine, LabelList
+  Tooltip, ResponsiveContainer, Cell, Area, AreaChart, ReferenceLine, LabelList
 } from 'recharts';
 
 // --- COMPONENTES AUXILIARES ---
