@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Menu, X } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
-import logoUrl from "../../assets/LogoGreenglo_1.png";
+import logoUrl from "../../assets/LogoGreenglo_1.webp";
 // 1. Importamos el componente Transition de Headless UI
 import { Transition } from "@headlessui/react";
 import { Fragment } from 'react'; // Necesario para Headless UI en algunas versiones

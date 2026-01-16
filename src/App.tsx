@@ -8,6 +8,7 @@ import { ContactAdSection } from './components/pages/ContactAD';
 import {SavingsChart} from './components/pages/SavingsCharts';
 import { Footer } from './components/pages/Footer';
 import { SolarCalculator } from './components/pages/SolarCalculator';
+import { ContactForm } from './components/pages/Contact';
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <ClientsSection />
       <SavingsChart />
       <SolarCalculator />
+      <ContactForm />
       <Footer/>
     </>
   )

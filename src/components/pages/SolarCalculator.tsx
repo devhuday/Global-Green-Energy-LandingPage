@@ -338,9 +338,9 @@ const SolarCalculator = () => {
   };
 
   return (
-    <div className=" bg-slate-50 font-sans text-slate-900">
+    <div id='contacto' className=" bg-slate-50 font-sans text-slate-900">
       {/* Landing Section */}
-      <div className="flex flex-row items-center justify-center min-h-screen p-4 relative overflow-hidden gap-4">
+      <div className="flex flex-row items-center justify-center min-h-full p-6 pb-30 pt-16 relative overflow-hidden gap-4">
         
         <div className="text-center z-10 max-w-3xl">
           

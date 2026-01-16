@@ -11,9 +11,9 @@ import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { useState } from "react";
 // Asegúrate de que tus rutas de imagen sean correctas
-import serviceSolar from "../../assets/SolarService.jpg";
-import serviceWind from "../../assets/service-wind.png";
-import serviceConsulting from "../../assets/service-consulting.jpg";
+import serviceSolar from "../../assets/SolarService.webp";
+import serviceWind from "../../assets/service-wind.webp";
+import serviceConsulting from "../../assets/service-consulting.webp";
 
 const WHATSAPP_NUMBER = "573136145611";
 

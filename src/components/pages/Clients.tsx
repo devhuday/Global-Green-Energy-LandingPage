@@ -10,12 +10,12 @@ import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 
 // Asegúrate de que las rutas sean correctas
-import testimonialCarlos from "../../assets/testimonial-carlos.jpg";
-import testimonialMaria from "../../assets/testimonial-maria.jpg";
-import testimonialRoberto from "../../assets/testimonial-roberto.jpg";
-import projectComercial from "../../assets/project-carlos.jpg";
-import projectResidencial from "../../assets/project-maria.jpg";
-import projectAgro from "../../assets/project-roberto.jpeg";
+import testimonialCarlos from "../../assets/testimonial-carlos.webp";
+import testimonialMaria from "../../assets/testimonial-maria.webp";
+import testimonialRoberto from "../../assets/testimonial-roberto.webp";
+import projectComercial from "../../assets/project-carlos.webp";
+import projectResidencial from "../../assets/project-maria.webp";
+import projectAgro from "../../assets/project-roberto.webp";
 
 const testimonials = [
   {
