@@ -71,14 +71,7 @@ const testimonials = [
   },
 ];
 
-const clients = [
-  "Grupo Empresarial del Caribe",
-  "Cooperativa de Caficultores",
-  "Universidad del Valle",
-  "Hospital San José",
-  "Centro Comercial La Florida",
-  "Alcaldía de Villavicencio",
-];
+
 
 // Sub-componente para la tarjeta de testimonio (DRY)
 const TestimonialCard = ({ testimonial, onOpen }: { testimonial: typeof testimonials[0]; onOpen: (testimonial: typeof testimonials[0]) => void }) => (
