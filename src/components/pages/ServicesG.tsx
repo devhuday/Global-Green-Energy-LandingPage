@@ -114,7 +114,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="servicios" className="relative py-16 lg:py-24 bg-linear-to-b from-gray-50 to-white overflow-hidden">
+    <section id="servicios" className="relative py-16 lg:py-24 px-4 lg:px-34 bg-linear-to-b from-gray-50 to-white overflow-hidden">
       
       {/* Elemento decorativo de fondo (opcional para dar profundidad) */}
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-gray-200 to-transparent"></div>
@@ -128,7 +128,7 @@ export function ServicesSection() {
             variant="solar"
             className="mb-6 mx-auto"
           />
-          <h2 className="mb-6 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="mb-6 text-4xl font-heading font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             Soluciones para <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">tus necesidades</span>
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">

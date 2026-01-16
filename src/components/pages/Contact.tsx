@@ -50,8 +50,8 @@ export function ContactForm() {
 
       <div>
         <div className="flex flex-col max-w-lg mx-auto mb-12 relative z-10">
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-background mb-6">
+          <div className="justify-center text-center">
+            <h2 className="text-4xl md:text-4xl lg:text-6xl font-heading font-bold text-background mb-6">
               ¿Listo para Comenzar tu
               <span className="text-green-400 block">
                 Transición Energética?

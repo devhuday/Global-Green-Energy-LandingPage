@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const logoUrl = "https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/Logotipo.png"; // Icon only logo
+  const logoUrl = "https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/LogoGreenglo2.webp"; // Icon only logo
 
   return (
     <footer className="bg-slate-900 text-white pt-16 pb-8">
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-3 mb-6">
                <img src={logoUrl} alt="Greenglo Logo" className="h-12 w-auto" />
-               <span className="text-2xl font-bold text-white">Greenglo</span>
+               
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Global Green Energy SAS. Impulsamos el futuro sostenible de Colombia mediante soluciones de energía renovable innovadoras y accesibles.

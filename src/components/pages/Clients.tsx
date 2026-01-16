@@ -137,13 +137,13 @@ export function ClientsSection() {
   const [selectedTestimonial, setSelectedTestimonial] = useState<typeof testimonials[0] | null>(null);
 
   return (
-    <section id="clientes" className="py-16 lg:py-24 bg-white overflow-hidden">
+    <section id="clientes" className="py-16 lg:py-24 px-4 md:px-34 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Encabezado de Sección */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <Badge text="Testimonios" variant="solar" className="mb-6 mx-auto" />
-          <h2 className="mb-6 text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          <h2 className="mb-6 text-4xl md:text-6xl font-heading font-extrabold text-gray-900">
             Lo que dicen <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">Nuestros Clientes</span>
           </h2>
           <p className="text-lg text-gray-600">
@@ -162,22 +162,7 @@ export function ClientsSection() {
           ))}
         </div>
 
-        {/* Sección de Logos de Clientes (Trust Strip) */}
-        <div className="border-t border-gray-100 pt-16">
-          <p className="text-center text-sm font-semibold uppercase tracking-wider text-gray-400 mb-8">
-            Empresas que confían en nosotros
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 opacity-70 hover:opacity-100 transition-opacity">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="rounded-full bg-gray-50 px-6 py-3 text-sm font-bold text-gray-500 border border-gray-100 shadow-sm whitespace-nowrap"
-              >
-                {client}
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* MODAL / DIALOG - Rediseñado */}
         <Dialog

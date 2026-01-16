@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import Badge from '../ui/Badge';
 
 interface SavingsCardProps {
   category: string;
@@ -106,9 +107,15 @@ export const SavingsChart: React.FC = () => {
   return (
     <section id='proyectos' className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-            Calcula tu <span className="text-[#65a30d]">Ahorro Potencial</span>
+        
+        <div className="text-center mb-10">
+          <Badge
+            text="Casos de Éxito"
+            variant="solar"
+            className="mb-10 mx-auto"
+          />
+          <h2 className="text-4xl md:text-6xl font-heading font-extrabold text-gray-900 mb-6 tracking-tight">
+            Proyectos  <span className="text-[#65a30d]">Destacados</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed font-normal">
             Mira cómo nuestros clientes en Colombia han reducido significativamente sus facturas de energía con nuestras soluciones.

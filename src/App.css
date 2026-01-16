@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'DM Sans';
   /* Apunta a tu único archivo variable */
-  src: url('/fonts/DMSans-Variable.woff2') format('woff2-variations');
+  src: url('/public/fonts/DMSans-Variable.woff2') format('woff2-variations');
   /* ¡Aquí está el truco! Le dices que este archivo sirve para todo este rango */
   font-weight: 100 900; 
   font-style: normal;

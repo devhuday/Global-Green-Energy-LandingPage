@@ -16,7 +16,7 @@ export const ContactAdSection = () => {
           {/* COLUMNA 1: Contenido de Texto */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="mb-10 space-y-5">
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-100 tracking-tight leading-tight">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-100 tracking-tight leading-tight">
                 ¿Tienes dudas sobre tu <br className="hidden lg:block" />
                 <span className="text-accent-solar-hover">proyecto solar?</span>
               </h2>

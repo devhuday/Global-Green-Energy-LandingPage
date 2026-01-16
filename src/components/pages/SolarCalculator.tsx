@@ -8,6 +8,7 @@ import {
   Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, 
   Tooltip, ResponsiveContainer, Cell, Area, AreaChart, ReferenceLine, LabelList
 } from 'recharts';
+import Badge from '../ui/Badge';
 
 // --- COMPONENTES AUXILIARES ---
 
@@ -342,14 +343,19 @@ const SolarCalculator = () => {
       {/* Landing Section */}
       <div className="flex flex-row items-center justify-center min-h-full p-6 pb-30 pt-16 relative overflow-hidden gap-4">
         
-        <div className="text-center z-10 max-w-3xl">
+        <div className="text-center md:text-start z-10 max-w-3xl">
+          <Badge
+            text="calcula tu ahorro"
+            variant="solar"
+            className="mb-4 mx-auto"
+          />
           
-          <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight text-slate-900">
-            Genera tu propia <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-accent">energía ilimitada</span>
+          <h1 className="text-5xl md:text-7xl font-heading font-black mb-8 leading-tight tracking-tight text-slate-900">
+            Genera tu propia <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-solar to-primary">energía ilimitada</span>
           </h1>
           
-          <p className="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
-            Descubre cuánto puedes ahorrar instalando paneles solares. Informe técnico detallado en segundos.
+          <p className="text-xl text-slate-500 mb-10 max-w-xl ">
+          Descubre cuánto puedes ahorrar instalando paneles solares. Informe técnico detallado en segundos.
           </p>
 
           <button

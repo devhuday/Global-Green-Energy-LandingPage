@@ -68,7 +68,7 @@ const AboutSection: React.FC = () => {
             />
 
             {/* Título Principal */}
-            <h2 className="text-[40px] sm:text-5xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+            <h2 className="text-[40px] sm:text-5xl lg:text-5xl font-heading font-extrabold text-gray-900 leading-tight">
               Impulsando el futuro con{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-primary">
                 GreenGlo SAS

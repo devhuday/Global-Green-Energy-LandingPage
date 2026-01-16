@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             className="mb-4 mx-auto"
           />
 
-          <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-6">
+          <h1 className="text-5xl md:text-6xl font-heading font-extrabold text-white tracking-tight leading-tight mb-6">
             Transforma tu consumo,{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-primary">Genera tu propia energía.</span>
           </h1>
