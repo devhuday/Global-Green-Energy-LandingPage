@@ -223,7 +223,7 @@ const SolarCalculator = () => {
     const PANEL_WATTAGE = 620; 
     const HSP_AVG = 4.2; 
     const PERFORMANCE_RATIO = 0.90; 
-    const ENERGY_PRICE = 1050; 
+    const ENERGY_PRICE = 1055; 
     const INFLATION_RATE = 0.06; 
     
     // Dimensionamiento
@@ -235,7 +235,7 @@ const SolarCalculator = () => {
     const areaRequired = Math.ceil(numPanels * 2.2); 
     
     // Financiero
-    const installCost = systemSize * 3700000; 
+    const installCost = systemSize * 4100000; 
     const monthlyBillBefore = consumption * ENERGY_PRICE;
     const solarGenerationMonthly = systemSize * HSP_AVG * 30 * PERFORMANCE_RATIO;
     const monthlySavingsInitial = Math.min(consumption, solarGenerationMonthly) * ENERGY_PRICE;

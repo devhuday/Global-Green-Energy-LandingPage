@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-               <img src={logoUrl} alt="Greenglo Logo" className="h-12 w-auto" />
+               <img src={logoUrl} alt="Greenglo Logo" className="h-12" />
                
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
