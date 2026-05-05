@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight, Check, MoveRight, UserCheck } from "lucide-react";
-import Badge from "../ui/Badge";
+import Badge from "../components/ui/Badge";
 
 const featuresList = [
   "Instalación de Sistemas Solares",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Phone, Mail, User, MessageSquare, ArrowUp } from "lucide-react";
-import { WpButton } from "../ui/buttonWhatsapp";
+import { WpButton } from "../components/ui/buttonWhatsapp";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({

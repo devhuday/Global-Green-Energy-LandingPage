@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
-
+import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { TiktokLogo } from "@phosphor-icons/react";
 const Footer: React.FC = () => {
   const logoUrl = "https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/LogoGreenglo2.webp"; // Icon only logo
 
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a href="#" className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors text-white">
-                <Linkedin size={20} />
+                <TiktokLogo size={20} />
               </a>
             </div>
           </div>

@@ -1,14 +1,14 @@
 import './App.css'
-import { Header } from './components/pages/Header';
-import { Hero} from './components/pages/Hero';
-import { ServicesSection } from './components/pages/ServicesG';
-import { ClientsSection } from './components/pages/Clients';
-import {AboutSection} from './components/pages/About';
-import { ContactAdSection } from './components/pages/ContactAD';
-import {SavingsChart} from './components/pages/SavingsCharts';
-import { Footer } from './components/pages/Footer';
-import { SolarCalculator } from './components/pages/SolarCalculator';
-import { ContactForm } from './components/pages/Contact';
+import { Header } from './pages/Header';
+import { Hero} from './pages/Hero';
+import { ServicesSection } from './pages/Services';
+import { ClientsSection } from './pages/Clients';
+import {AboutSection} from './pages/About';
+import { ContactAdSection } from './pages/ContactAD';
+import {ProyectsClients} from './pages/Proyects';
+import { Footer } from './pages/Footer';
+import { SolarCalculator } from './pages/SolarCalculator';
+import { ContactForm } from './pages/Contact';
 function App() {
 
   return (
@@ -19,7 +19,7 @@ function App() {
       <ServicesSection />
       <ContactAdSection />
       <ClientsSection />
-      <SavingsChart />
+      <ProyectsClients />
       <SolarCalculator />
       <ContactForm />
       <Footer/>

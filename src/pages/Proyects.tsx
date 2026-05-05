@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import Badge from '../ui/Badge';
+import Badge from '../components/ui/Badge';
 
 interface SavingsCardProps {
   category: string;
@@ -73,7 +73,7 @@ const SavingsCard: React.FC<SavingsCardProps> = ({
   );
 };
 
-export const SavingsChart: React.FC = () => {
+export const ProyectsClients: React.FC = () => {
   const cards = [
     {
       category: 'Hogar',
@@ -95,9 +95,9 @@ export const SavingsChart: React.FC = () => {
     },
     {
       category: 'Industria',
-      image: 'https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/20240319_101301%20(2).webp',
+      image: 'https://luereyyaepjejecuttgb.supabase.co/storage/v1/object/public/Landing-Photos/chivolo_1.webp',
       savingsPercentage: '-80%',
-      priceBefore: '$8.000.000',
+      priceBefore: '$10.000.000',
       priceAfter: '$2.200.000',
       consumption: '5.500 kWh/mes',
       systemSize: '34 kWp',

@@ -6,14 +6,14 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { Card, CardContent } from "../ui/card";
-import { Button } from "../ui/Button";
-import { Badge } from "../ui/Badge";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/Button";
+import { Badge } from "../components/ui/Badge";
 import { useState } from "react";
 // Asegúrate de que tus rutas de imagen sean correctas
-import serviceSolar from "../../assets/SolarService.webp";
-import serviceWind from "../../assets/service-wind.webp";
-import serviceConsulting from "../../assets/service-consulting.webp";
+import serviceSolar from "../assets/SolarService.webp";
+import serviceWind from "../assets/service-wind.webp";
+import serviceConsulting from "../assets/service-consulting.webp";
 
 const WHATSAPP_NUMBER = "573136145611";
 

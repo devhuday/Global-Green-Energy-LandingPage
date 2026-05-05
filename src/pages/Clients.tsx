@@ -5,17 +5,17 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
-import { Button } from "../ui/Button";
-import { Badge } from "../ui/Badge";
+} from "../components/ui/dialog";
+import { Button } from "../components/ui/Button";
+import { Badge } from "../components/ui/Badge";
 
 // Asegúrate de que las rutas sean correctas
-import testimonialCarlos from "../../assets/testimonial-carlos.webp";
-import testimonialMaria from "../../assets/testimonial-maria.webp";
-import testimonialRoberto from "../../assets/testimonial-roberto.webp";
-import projectComercial from "../../assets/project-carlos.webp";
-import projectResidencial from "../../assets/project-maria.webp";
-import projectAgro from "../../assets/project-roberto.webp";
+import testimonialCarlos from "../assets/testimonial-carlos.webp";
+import testimonialMaria from "../assets/testimonial-maria.webp";
+import testimonialRoberto from "../assets/testimonial-roberto.webp";
+import projectComercial from "../assets/project-carlos.webp";
+import projectResidencial from "../assets/project-maria.webp";
+import projectAgro from "../assets/project-roberto.webp";
 
 const testimonials = [
   {

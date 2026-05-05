@@ -2,13 +2,15 @@ import { useState } from 'react';
 import { 
   X, Zap, TrendingUp, Leaf, DollarSign, 
   BarChart3, Sun, Battery, ArrowRight, CheckCircle2,
-  PiggyBank, ArrowUpRight, Home, UtilityPole
+  PiggyBank, ArrowUpRight, Home, UtilityPole,
+  Trees,
+  Cloudy
 } from 'lucide-react';
 import { 
   Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, 
   Tooltip, ResponsiveContainer, Cell, Area, AreaChart, ReferenceLine, LabelList
 } from 'recharts';
-import Badge from '../ui/Badge';
+import Badge from '../components/ui/Badge';
 
 // --- COMPONENTES AUXILIARES ---
 
@@ -235,7 +237,7 @@ const SolarCalculator = () => {
     const areaRequired = Math.ceil(numPanels * 2.2); 
     
     // Financiero
-    const installCost = systemSize * 4100000; 
+    const installCost = systemSize * 4500000; 
     const monthlyBillBefore = consumption * ENERGY_PRICE;
     const solarGenerationMonthly = systemSize * HSP_AVG * 30 * PERFORMANCE_RATIO;
     const monthlySavingsInitial = Math.min(consumption, solarGenerationMonthly) * ENERGY_PRICE;
@@ -360,7 +362,7 @@ const SolarCalculator = () => {
 
           <button
             onClick={() => setShowModal(true)}
-            className="group relative bg-slate-900 hover:bg-slate-800 text-white font-bold py-5 px-10 rounded-2xl text-xl shadow-2xl hover:shadow-emerald-500/20 transition-all transform hover:-translate-y-1"
+            className="group relative bg-slate-900 hover:bg-slate-700 text-white font-bold py-5 px-10 rounded-2xl text-xl shadow-2xl hover:shadow-accent transition-all transform hover:-translate-y-1"
           >
             <div className="flex items-center gap-4">
               <Zap className="text-accent group-hover:scale-110 transition-transform" fill="currentColor" />
@@ -381,7 +383,7 @@ const SolarCalculator = () => {
       {/* Input Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-2 z-40 animate-in fade-in duration-200">
-          <div className="bg-white rounded-4xl max-w-lg w-full p-8 shadow-2xl relative">
+          <div className="bg-white  mt-15 pt-5 rounded-4xl max-w-lg w-full p-8 shadow-2xl relative">
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-6 right-6 p-2 hover:bg-slate-100 rounded-full transition-colors"
@@ -389,12 +391,15 @@ const SolarCalculator = () => {
               <X size={20} className="text-slate-400" />
             </button>
             
-            <div className="mb-8">
+            <div className="mb-8 flex flex-row gap-2">
               <div className="w-12 h-12 bg-accent-act rounded-xl flex items-center justify-center mb-4 text-accent-soft">
                 <Sun size={24} />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900">Datos del Proyecto</h2>
+              <div>
+                <h2 className="text-2xl font-heading font-bold text-slate-900">Datos del Proyecto</h2>
               <p className="text-slate-500">Configura los parámetros para tu simulación.</p>
+              </div>
+              
             </div>
             
             <div className="space-y-5">
@@ -419,6 +424,28 @@ const SolarCalculator = () => {
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all"
                         placeholder="Ej: Santa Marta"
+                    />
+                </div>
+                <div>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Numero de telefono</label>
+                    <input
+                        type="text"
+                        name="city"
+                        value={formData.city}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all"
+                        placeholder="Ej: 3214589665"
+                    />
+                </div>
+                <div>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">correo electronico</label>
+                    <input
+                        type="text"
+                        name="city"
+                        value={formData.city}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all"
+                        placeholder="Ej: name@gmail.com"
                     />
                 </div>
               </div>
@@ -489,16 +516,16 @@ const SolarCalculator = () => {
                 {/* Card 1 */}
                 <div className="bg-white rounded-3xl p-6 shadow-xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden group hover:border-emerald-200 transition-colors">
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <PiggyBank size={80} className="text-emerald-500" />
+                        <PiggyBank size={80} className="text-primary" />
                     </div>
                     <div className="flex items-center gap-3 mb-4">
-                        <div className="bg-emerald-100 p-2.5 rounded-xl text-emerald-600"><DollarSign size={20} /></div>
+                        <div className="bg-primary/20 p-2.5 rounded-xl text-primary"><DollarSign size={20} /></div>
                         <span className="font-bold text-slate-600">Ahorro Anual Estimado</span>
                     </div>
                     <div className="text-4xl font-black mb-2 text-slate-900 tracking-tight">
                         {formatCOP(reportData.yearlySavings)}
                     </div>
-                    <div className="flex items-center gap-1 text-sm font-semibold text-emerald-600 bg-emerald-50 w-fit px-2 py-1 rounded-full">
+                    <div className="flex items-center gap-1 text-sm font-semibold text-accent bg-accent/20 w-fit px-2 py-1 rounded-full">
                         <ArrowUpRight size={14} />
                         <span>Proyección Año 1</span>
                     </div>
@@ -576,8 +603,8 @@ const SolarCalculator = () => {
                                 />
                                 <Tooltip 
                                     cursor={{fill: '#f8fafc'}}
-                                    contentStyle={{backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', color: '#1e293b', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'}}
-                                    itemStyle={{color: '#1e293b', fontWeight: 'bold'}}
+                                    contentStyle={{backgroundColor: '#fff', borderRadius: '12px', border: '2px solid #e2e8f0', color: '#1e293b', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'}}
+                                    itemStyle={{color: '#8db738', fontWeight: 'bold'}}
                                     formatter={(val: number | undefined) => val !== undefined ? [formatCOP(val), 'Flujo Neto'] : ['', 'Flujo Neto']}
                                 />
                                 <ReferenceLine y={0} stroke="#cbd5e1" />
@@ -585,7 +612,7 @@ const SolarCalculator = () => {
                                     {reportData.cashFlowData.map((entry: any, index: number) => (
                                         <Cell 
                                             key={`cell-${index}`} 
-                                            fill={entry.flujoNeto < 0 ? '#cbd5e1' : '#10b981'} 
+                                            fill={entry.flujoNeto < 0 ? '#cbd5e1' : '#8db738'} 
                                         />
                                     ))}
                                     <LabelList dataKey="annotation" content={<CustomBarLabel />} />
@@ -599,20 +626,22 @@ const SolarCalculator = () => {
                 <div className="space-y-6">
                     
                     {/* Impacto Ambiental */}
-                    <div className="bg-emerald-50/50 rounded-3xl p-8 border border-emerald-100">
-                        <h3 className="font-bold text-emerald-900 mb-6 flex items-center gap-2">
-                            <Leaf size={20} className="text-emerald-600"/> Impacto Ambiental
+                    <div className="bg-accent/80 rounded-3xl p-8 border border-accent">
+                    
+                        <h3 className="font-bold font-heading text-xl text-background mb-6 flex items-center gap-2">
+                          <div className="bg-accent-soft p-2.5 rounded-xl text-primary"><Leaf size={20} /></div>
+                           Impacto Ambiental
                         </h3>
                         <div className="space-y-4">
                             <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-emerald-50">
-                                <span className="text-3xl">🌲</span>
+                                <Trees className="w-8 h-8 text-primary" />
                                 <div>
                                     <div className="text-2xl font-bold text-slate-900">{reportData.treesEquivalent}</div>
                                     <div className="text-xs font-bold text-slate-400 uppercase tracking-wide">Árboles Plantados</div>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-emerald-50">
-                                <span className="text-3xl">☁️</span>
+                                <Cloudy className="w-8 h-8 text-primary" />
                                 <div>
                                     <div className="text-2xl font-bold text-slate-900">{reportData.co2Saved} kg</div>
                                     <div className="text-xs font-bold text-slate-400 uppercase tracking-wide">CO2 Evitado / Año</div>
