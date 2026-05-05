@@ -41,7 +41,7 @@ const SolarReport = ({ data, onClose }: any) => (
   </div>
 );
 
-const KPICard = ({ title, value, icon, color }: any) => (
+const KPICard = ({ title, value, icon }: any) => (
   <div className="bg-white p-6 rounded-3xl shadow-sm border-b-4 border-emerald-500">
     <div className="flex items-center gap-3 text-slate-500 mb-2">{icon} <span className="text-sm font-bold">{title}</span></div>
     <div className="text-3xl font-black">{value}</div>
